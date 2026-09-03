@@ -28,4 +28,5 @@ def convert_html_to_pdf(html_file, output_pdf):
 
 if __name__ == "__main__":
     convert_html_to_pdf('resume-print.html', 'resume.pdf')
+    convert_html_to_pdf('resume-print-en.html', 'resume-en.pdf')
 

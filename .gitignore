@@ -1,0 +1,4 @@
+__pycache__/
+tmp/
+dist/
+.openai/site-package.tar.gz

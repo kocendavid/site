@@ -79,6 +79,36 @@ body {
     flex-shrink: 0;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+
+.language-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
+    min-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.language-button:hover,
+.language-button:focus-visible {
+    background-color: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
 /* Header Section */
 header {
     background-color: #1e293b;
@@ -290,6 +320,49 @@ p {
     font-weight: 600;
 }
 
+@media (max-width: 700px) {
+    header,
+    .main-content {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .header-container {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .profile-photo {
+        width: 88px;
+        height: 88px;
+    }
+
+    .header-content-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .experience-header {
+        display: block;
+    }
+
+    .date-range {
+        display: block;
+        margin: 0.25rem 0 0;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
 /* Print Optimizations for wkhtmltopdf */
 @media print {
     body {
@@ -304,7 +377,8 @@ p {
         padding: 0;
     }
 
-    .pdf-button {
+    .pdf-button,
+    .language-button {
         display: none;
     }
 
