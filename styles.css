@@ -220,6 +220,15 @@ p {
     font-size: 0.9375rem;
 }
 
+.video-page .container,
+.video-page .header-container {
+    max-width: 90rem;
+}
+
+.video-page .header-container {
+    justify-content: space-between;
+}
+
 .project-video {
     display: block;
     width: 100%;
@@ -398,7 +407,7 @@ p {
 
     .pdf-button,
     .language-button,
-    .video-section {
+    .video-page-link {
         display: none;
     }
 

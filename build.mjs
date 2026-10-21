@@ -8,6 +8,7 @@ const staticFiles = [
   "resume-en.pdf",
   "1641814386890.jpg",
   "media",
+  "video",
 ];
 
 await rm("dist", { recursive: true, force: true });
