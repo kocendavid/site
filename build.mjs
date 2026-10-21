@@ -7,6 +7,7 @@ const staticFiles = [
   "resume.pdf",
   "resume-en.pdf",
   "1641814386890.jpg",
+  "media",
 ];
 
 await rm("dist", { recursive: true, force: true });
@@ -14,7 +15,7 @@ await mkdir("dist/client", { recursive: true });
 await mkdir("dist/server", { recursive: true });
 
 await Promise.all(
-  staticFiles.map((file) => cp(file, `dist/client/${file}`)),
+  staticFiles.map((file) => cp(file, `dist/client/${file}`, { recursive: true })),
 );
 
 await writeFile(

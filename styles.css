@@ -220,6 +220,25 @@ p {
     font-size: 0.9375rem;
 }
 
+.project-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #0f172a;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+}
+
+.video-link {
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+}
+
+.video-link a {
+    color: var(--primary);
+    text-underline-offset: 0.2em;
+}
+
 /* Skills Grid - Converted to Flexbox for compatibility */
 .skills-grid {
     display: flex;
@@ -378,7 +397,8 @@ p {
     }
 
     .pdf-button,
-    .language-button {
+    .language-button,
+    .video-section {
         display: none;
     }
 
